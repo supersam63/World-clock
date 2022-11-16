@@ -5,35 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=>, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>Document</title>
+
+    <title>World Clock</title>
   </head>
   <body>
-    <div class="container">
-    <h1>World Clock</h1>
+    <section class="showcase">
+      <video
+        src="src/watch.mp4"
+        width="1200"
+        autoplay
+        loop
+        muted
+        plays-inline></video>
 
-    <select>
-        <option value="">Select a city...</option>
-        <option value="">London</option>
-        <option value="">Tokyo</option>
-        <option value="">New York</option>
-    </select>
-    <div class=""city">
-    <h2>Los Angeles 🇺🇸</h2>
-    <div class="date">November 12th 2022</div>
-    <div class="time">3:30:17 PM</div>
-<h2>Sydney 🇦🇺</h2>
-    <div class="date">November 12th 2022</div>
-    <div class="time">3:30:17 PM</div>
+      <div class="container">
+        <h1>World Clock</h1>
 
-
+        <select>
+          <option value="">Select a city...</option>
+          <option value="">London</option>
+          <option value="">Tokyo</option>
+          <option value="">New York</option>
+        </select>
+        <div class="city">
+          <div>
+            <h2>Los Angeles 🇺🇸</h2>
+            <div class="date">November 12th 2022</div>
+          </div>
+          <div class="time">
+            3:30:17
+            <small>PM</small>
+          </div>
         </div>
- </div>
-    <footer>
-      This project was coded by Samantha Vellinga and is
-      <a href="https://github.com/supersam63/World-clock" target="_blank">
-        open sourced on GitHub</a
-      >
-    </footer>
+        <div class="city">
+          <div>
+            <h2>Amsterdam 🇳🇱</h2>
+            <div class="date">November 12th 2022</div>
+          </div>
+          <div class="time">
+            3:30:17
+            <small>PM</small>
+          </div>
+        </div>
+
+        <div class="city">
+          <div>
+            <h2>Sydney 🇦🇺</h2>
+            <div class="date">November 12th 2022</div>
+          </div>
+          <div class="time">
+            3:30:17
+            <small>PM</small>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        This project was coded by <strong>Samantha Vellinga</strong> and is
+        <a href="https://github.com/supersam63/World-clock" target="_blank">
+          open sourced on GitHub</a
+        >
+      </p>
+    </section>
+
     <script src="src/script.js"></script>
   </body>
 </html>

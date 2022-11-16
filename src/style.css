@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Poppins:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  text-align: left;
+  font-size: 36px;
+  padding-bottom: 10px;
+}
+h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+p {
+  font-size: 14px;
+  position: relative;
+  top: 45px;
+  left: 28px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+}
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.showcase .container {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  width: 500px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 30px 30px 10px 30px;
+  border-radius: 4px;
+
+  z-index: 10;
+}
+.showcase video {
+  position: absolute;
+  z-index: -10;
+  border-radius: 5px;
+}
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
+}
+.time {
+  font-size: 36px;
+  font-weight: bold;
+}
+.time small {
+  font-size: 20px;
+  vertical-align: middle;
+  line-height: 48px;
+}
+.date {
+  opacity: 0.5;
+}
+.city:last-child {
+  border: none;
+}
