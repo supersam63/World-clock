@@ -1,10 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Poppins:wght@300&display=swap");
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   font-family: "Poppins", sans-serif;
 }
+body {
+  background-color: lightgray;
+}
+
+.hero {
+  max-width: 1400px;
+  margin-bottom: 100px;
+  padding: 200px 0;
+  margin: 0 auto;
+}
+.video-bg {
+  position: absolute;
+  border-radius: 10px;
+  max-width: 1400px;
+  max-height: 100%;
+  z-index: -1;
+}
+
 h1 {
   text-align: left;
   font-size: 36px;
@@ -16,7 +31,7 @@ h2 {
 }
 p {
   font-size: 14px;
-  position: relative;
+
   top: 45px;
   left: 28px;
 }
@@ -28,31 +43,14 @@ select {
   padding: 10px;
 }
 
-.showcase {
-  position: absolute;
-  right: 0;
-  width: 100%;
-  min-height: 100vh;
-  padding: 100px;
-  justify-content: space-between;
-  align-items: center;
-}
-.showcase .container {
-  position: relative;
-  top: 30px;
-  left: 30px;
+.container {
   width: 500px;
   background: rgba(255, 255, 255, 0.5);
   padding: 30px 30px 10px 30px;
   border-radius: 4px;
+  margin: 30px 30px;
+}
 
-  z-index: 10;
-}
-.showcase video {
-  position: absolute;
-  z-index: -10;
-  border-radius: 5px;
-}
 .city {
   display: flex;
   justify-content: space-between;
@@ -74,4 +72,33 @@ select {
 }
 .city:last-child {
   border: none;
+}
+@media (max-width: 960px), (max-height: 600px) {
+  .video-bg {
+    display: none;
+  }
+  body {
+    background-color: lightgray;
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .time {
+    font-size: 20px;
+  }
+  .city {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .hero {
+    padding: 0;
+  }
 }
