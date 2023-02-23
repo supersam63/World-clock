@@ -101,4 +101,10 @@ select {
   .hero {
     padding: 0;
   }
+  .date {
+    font-size: 14px;
+  }
+  p {
+    font-size: 11px;
+  }
 }
